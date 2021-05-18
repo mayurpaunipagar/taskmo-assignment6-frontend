@@ -119,14 +119,14 @@ export default function AddLead() {
         <div className="new-profile-container">
           <div className="my-new-profile">
             <div className="my-new-profile-form-container">
-              <div>
+              {/* <div>
                 <div className="new-profile-text">Add New Profile </div>
                 <img
                   className="my-new-profile-img"
                   src={window.location.origin + "/images/add-employe-image.svg"}
                   alt="profile icon"
                 />
-              </div>
+              </div> */}
               <div className="my-form">
                 {formData.map((el) => {
                   if (el==="select"
