@@ -2,7 +2,9 @@ import { useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router";
 import { VENDOR_REGISTRATION_URL } from "../../config";
+import SectionA from "./sectionA";
 import "./style.css";
+import VrHeader from "./vrHeader";
 export default function VendorRegistration() {
   const [loading, setLoading] = useState(false);
   const [input1, setInput1] = useState("");
@@ -33,27 +35,39 @@ export default function VendorRegistration() {
   };
   return (
     <>
-      {loading ? (
-        <><Spinner animation="grow"/></>
-      ) : (
-        <>
-          <input
-            type="text"
-            placeholder="INPUT 1"
-            onChange={(e) => {
-              setInput1(e.target.value.trim());
-            }}
-          />
-          <input
-            type="text"
-            placeholder="INPUT 2"
-            onChange={(e) => {
-              setInput2(e.target.value.trim());
-            }}
-          />
-          <button onClick={submitFunc}>Submit</button>
-        </>
-      )}
+      <div className="vr-container">
+        <div className="vr-header">
+          <VrHeader />
+        </div>
+
+        {loading ? (
+          <>
+            <Spinner animation="grow" />
+          </>
+        ) : (
+          <>
+            <div className="vr-card">
+              <SectionA />
+            </div>
+
+            {/* <input
+              type="text"
+              placeholder="INPUT 1"
+              onChange={(e) => {
+                setInput1(e.target.value.trim());
+              }}
+            />
+            <input
+              type="text"
+              placeholder="INPUT 2"
+              onChange={(e) => {
+                setInput2(e.target.value.trim());
+              }}
+            />
+            <button onClick={submitFunc}>Submit</button> */}
+          </>
+        )}
+      </div>{" "}
     </>
   );
 }
