@@ -1,9 +1,9 @@
 import "./style.css";
 import { useState } from "react";
 import { Spinner } from "react-bootstrap";
+import EmailSent from "../emailSent";
 
 export default function AddLead() {
-  const genderArr = ["male", "female", "other"];
   const formData = [
     "Name",
     "Email",
@@ -24,6 +24,7 @@ export default function AddLead() {
   ];
   const [newFormData, setNewFormData] = useState({});
   const [loading, setLoading] = useState(false);
+  const [emailSent,setEmailSent]=useState(false);
 
   const setData = (event) => {
     const inputName = event.target.name;
@@ -99,6 +100,12 @@ export default function AddLead() {
     const res = await res1.json();
     console.log("response : ", res);
     setLoading(false);
+    if(res.id){
+      setEmailSent(true);
+    }else{
+      setEmailSent(false);
+    }
+    
   };
 
   const clearData = () => {
@@ -116,72 +123,72 @@ export default function AddLead() {
           <Spinner animation="grow" />
         </>
       ) : (
-        <div className="new-profile-container">
-          <div className="my-new-profile">
-            <div className="my-new-profile-form-container">
-              {/* <div>
-                <div className="new-profile-text">Add New Profile </div>
-                <img
-                  className="my-new-profile-img"
-                  src={window.location.origin + "/images/add-employe-image.svg"}
-                  alt="profile icon"
-                />
-              </div> */}
-              <div className="my-form">
-                {formData.map((el) => {
-                  if (el==="select"
-                    // el === "Gender" ||
-                    // el === "Job Role" ||
-                    // el === "State" ||
-                    // el === "City"
-                  ) {
-                    return (
-                      <>
-                        <label className="profile-input-label">{el}</label>
-                        <select
-                          className="profile-input-field gray"
-                          // type="text"
-                          // placeholder="Eg. your text here"
-                        >
-                          <option value="Eg. your text here">
-                            Eg. your text here
-                          </option>
-                        </select>
-                      </>
-                    );
-                  } else {
-                    return (
-                      <>
-                        <label className="profile-input-label">{el}</label>
-                        <input
-                          className="profile-input-field"
-                          type="text"
-                          placeholder="Eg. your text here"
-                          name={el}
-                          onChange={setData}
-                        />
-                      </>
-                    );
-                  }
-                })}
-                <div className="profile-button-container">
-                  <button
-                    className="profile-btn-add btn-style"
-                    onClick={addLead}
-                  >
-                    ADD
-                  </button>
-                  <button
-                    className="profile-btn-clear btn-style"
-                    onClick={clearData}
-                  >
-                    CLEAR
-                  </button>
-                </div>
+        emailSent?<><EmailSent/></>:<div className="new-profile-container">
+        <div className="my-new-profile">
+          <div className="my-new-profile-form-container">
+            {/* <div>
+              <div className="new-profile-text">Add New Profile </div>
+              <img
+                className="my-new-profile-img"
+                src={window.location.origin + "/images/add-employe-image.svg"}
+                alt="profile icon"
+              />
+            </div> */}
+            <div className="my-form">
+              {formData.map((el) => {
+                if (el==="select"
+                  // el === "Gender" ||
+                  // el === "Job Role" ||
+                  // el === "State" ||
+                  // el === "City"
+                ) {
+                  return (
+                    <>
+                      <label className="profile-input-label">{el}</label>
+                      <select
+                        className="profile-input-field gray"
+                        // type="text"
+                        // placeholder="Eg. your text here"
+                      >
+                        <option value="Eg. your text here">
+                          Eg. your text here
+                        </option>
+                      </select>
+                    </>
+                  );
+                } else {
+                  return (
+                    <>
+                      <label className="profile-input-label">{el}</label>
+                      <input
+                        className="profile-input-field"
+                        type="text"
+                        placeholder="Eg. your text here"
+                        name={el}
+                        onChange={setData}
+                      />
+                    </>
+                  );
+                }
+              })}
+              <div className="profile-button-container">
+                <button
+                  className="profile-btn-add btn-style"
+                  onClick={addLead}
+                >
+                  ADD
+                </button>
+                <button
+                  className="profile-btn-clear btn-style"
+                  onClick={clearData}
+                >
+                  CLEAR
+                </button>
               </div>
             </div>
           </div>
         </div>
+      </div>
       )}
     </>
   );
