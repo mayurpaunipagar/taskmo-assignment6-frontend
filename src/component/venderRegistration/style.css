@@ -20,3 +20,27 @@
     align-items: center;
     margin: 10px 10px;
 }
+
+.vr-btn{
+  background-color: #7302ea;
+  font-weight: bold;
+  color: white;
+  padding:10px 20px;
+  border-radius:10px;
+  outline:none;
+  margin:10px;
+  outline:none;
+  border:none;
+}
+.vr-btn:hover{
+  outline:none;
+  border:none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+.vr-btn:active{
+  background-color: #8726ee;
+  outline:none;
+  border:none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+}
