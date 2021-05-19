@@ -82,10 +82,8 @@ export default function SectionA() {
           <td>
             <input />
           </td>
-        </tr>
-      
-      
-        <tr className="mt-">
+        </tr>      
+        <tr >
           <th colSpan={2}>
             Contact Information<sup>2</sup>
           </th>
