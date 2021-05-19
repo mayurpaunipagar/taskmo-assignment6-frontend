@@ -77,15 +77,15 @@ export default function SectionA() {
             <input />
           </td>
         </tr>
-        <tr>
+        <tr >
           <td>Email Address</td>
           <td>
             <input />
           </td>
         </tr>
-      </table>
-      <table className="mb-3">
-        <tr>
+      
+      
+        <tr className="mt-">
           <th colSpan={2}>
             Contact Information<sup>2</sup>
           </th>
