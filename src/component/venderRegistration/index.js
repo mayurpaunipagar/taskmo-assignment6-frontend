@@ -3,6 +3,7 @@ import { Spinner } from "react-bootstrap";
 import { useParams } from "react-router";
 import { VENDOR_REGISTRATION_URL } from "../../config";
 import SectionA from "./sectionA";
+import SectionB from "./sectionB";
 import "./style.css";
 import VrHeader from "./vrHeader";
 export default function VendorRegistration() {
@@ -47,7 +48,9 @@ export default function VendorRegistration() {
         ) : (
           <>
             <div className="vr-card">
-              <SectionA />
+              {/* <SectionA />
+              <div></div> */}
+              <SectionB/>
             </div>
 
             {/* <input
