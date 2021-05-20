@@ -10,6 +10,7 @@ export default function SectionA() {
       <div className="mb-2">
         <b>Business Information</b>
       </div>
+      <div>
       <div className="mb-1">
         <div>Company / Remit to Name*</div>
         <div>
@@ -77,6 +78,7 @@ export default function SectionA() {
         <div>
           <input />
         </div>
+      </div>
       </div>
       <div className="mt-3 mb-3 textCenter">
         <b>Contact Information<sup>2</sup></b>
