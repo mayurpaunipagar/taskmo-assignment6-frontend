@@ -1,126 +1,118 @@
 export default function SectionA() {
   return (
     <>
-      <div className="mb-3">
+      <div className="mb-3 textCenter">
         <b>Section A - GENERAL INFORMATION</b>
       </div>
       <div className="vr-note mb-3">
         Please carefully review related footnote.
       </div>
-      <table className="mb-3">
-        <tbody>
-          <tr>
-            <th colSpan={2}>Business Information</th>
-          </tr>
-          <tr>
-            <td>Company / Remit to Name*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Address<sup>1</sup>*
-            </td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Address Line 2</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Address Line 3</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Address Line 4</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>City*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>State*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Postal Code*</td>
-            <td><input /></td>
-          </tr>
-          <tr>
-            <td>Country*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Phone Number*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Fax Number</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Email Address</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <th colSpan={2}>
-              Contact Information<sup>2</sup>
-            </th>
-          </tr>
-          <tr>
-            <td>Title</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Contact Name*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Phone Number*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Fax Number</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-          <tr>
-            <td>Email Address*</td>
-            <td>
-              <input />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="mb-2">
+        <b>Business Information</b>
+      </div>
+      <div className="mb-1">
+        <div>Company / Remit to Name*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Address<sup>1</sup>*</div>
+        <div><input/></div>
+      </div>
+      <div className="mb-1">
+        <div>Address Line 2</div>
+        <div><input/></div>
+      </div>
+      <div className="mb-1">
+        <div>Address Line 3</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Address Line 4</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>City*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>State*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Postal Code*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Country*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Phone Number*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Fax Number</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Email Address</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mt-3 mb-3 textCenter">
+        <b>Contact Information<sup>2</sup></b>
+      </div>
+      <div className="mb-1">
+        <div>Title</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Contact Name*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Phone Number*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Fax Number</div>
+        <div>
+          <input />
+        </div>
+      </div>
+      <div className="mb-1">
+        <div>Email Address*</div>
+        <div>
+          <input />
+        </div>
+      </div>
+
+      
       <table>
         <tbody>
           <tr>
