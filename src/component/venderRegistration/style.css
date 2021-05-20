@@ -1,5 +1,5 @@
-.vr-card{
-    border-radius: 20px;
+.vr-card {
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 45%);
   background-color: white;
   display: flex;
@@ -9,41 +9,48 @@
   margin: 10px 10px;
   padding: 10px;
 }
-.vr-note{
+.vr-note {
   font-size: smaller;
 }
 
-.vr-header{
-    display: flex;
-    flex-direction: column;
-    width: 95vw;
-    align-items: center;
-    margin: 10px 10px;
+.vr-header {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  align-items: center;
+  margin: 10px 10px;
 }
 
-.vr-btn{
+.vr-btn {
   background-color: #7302ea;
   font-weight: bold;
   color: white;
-  padding:10px 20px;
-  border-radius:10px;
-  outline:none;
-  margin:10px;
-  outline:none;
-  border:none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  margin: 10px;
+  outline: none;
+  border: none;
 }
-.vr-btn:hover{
-  outline:none;
-  border:none;
+.vr-btn:hover {
+  outline: none;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
 
-.vr-btn:active{
+.vr-btn:active {
   background-color: #8726ee;
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
 }
-.vr-input{
-  width:50vw;
+.vr-input {
+  width: 50vw;
+}
+
+.pay-info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
