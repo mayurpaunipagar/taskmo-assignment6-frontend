@@ -1,7 +1,7 @@
 import "./style.css";
 export default function VrHeader(){
     return <>
-    <div><b>SUPPLIER/VENDOR REGISTRATION</b></div>
+    <div className="textCenter"><b>SUPPLIER/VENDOR REGISTRATION</b></div>
     <div className="vr-welcome-text">
       Welcome to Taskmo! To be set up as a supplier/vendor at
       Taskmo, please fill out the attached Questionnaire. Each required

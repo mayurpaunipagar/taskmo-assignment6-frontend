@@ -18,162 +18,167 @@ export default function SectionB() {
 
   return (
     <>
-      <div className="mb-3">
+      <div className="mb-3 textCenter">
         <b>Section B - ENTITY INFORMATION</b>
       </div>
       <div className="vr-note mb-3">
         Please carefully review related footnote.
       </div>
-      <table>
-        <tbody>
-          <tr>
-            <td>1. Are you providing goods or/and services</td>
-            <td>
-              <input type="checkbox" id="goods" />
-              <label for="goods">Goods</label>
-              <br />
-              <input type="checkbox" id="services" />
-              <label for="services">Services</label>
-            </td>
-          </tr>
-          <tr>
-            <td>2. Please share your residential status</td>
-            <td>
-              <form>
-                <input
-                  type="radio"
-                  id="resident"
-                  name="residency"
-                  value="resident"
-                />
-                <label for="resident">Resident</label>
-                <br />
-                <input
-                  type="radio"
-                  id="non-resident"
-                  name="residency"
-                  value="non-resident"
-                />
-                <label for="non-resident">Non-Resident</label>
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>3. PAN Number*:</td>
-            <td>
-              <input className="vr-input" type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>4. Type of business</td>
-            <td>
-              <form>
-                <div onChange={onChangeRadioValue}>
-                  <input
-                    type="radio"
-                    id="individual"
-                    name="typeOfBusiness"
-                    value="individual"
-                  />
-                  <label for="individual">Individual</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="sole-proprietor"
-                    name="typeOfBusiness"
-                    value="non-resident"
-                  />
-                  <label for="sole-proprietor">Sole Proprietor</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="partnership-firm"
-                    name="typeOfBusiness"
-                    value="partnership-firm"
-                  />
-                  <label for="partnership-firm">Partnership Firm</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="pvt-ltd"
-                    name="typeOfBusiness"
-                    value="pvt-ltd"
-                  />
-                  <label for="pvt-ltd">Pvt Ltd</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="public-ltd"
-                    name="typeOfBusiness"
-                    value="public-ltd"
-                  />
-                  <label for="public-ltd">Public Ltd</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="others"
-                    name="typeOfBusiness"
-                    value="others"
-                  />
-                  <label for="others">Others</label>
-                </div>
-                {othersInput ? (
-                  <>
-                    <input className="vr-input"
-                      type="text"
-                      name="typeOfBusiness"
-                      onChange={onChangeOfOthersValue}
-                    />
-                  </>
-                ) : null}
-              </form>
-            </td>
-          </tr>
-          <tr>
-            <td>5. CRN Number*:</td>
-            <td>
-              <input className="vr-input" type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              6. Mention the type of goods/services which you are providing to
-              Taskmo
-            </td>
-            <td>
-              <textarea type="text" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              7. Is your entity registered under <b>MSME ACT<sup>3</sup></b>.
-              <br/>
-              <span className="vr-note">If (Yes) please
-              provide a copy of the MSME registration certificate mandatorily</span>
-            </td>
-            <td>
-            <form>
-                <input
-                  type="radio"
-                  id="msme-yes"
-                  name="msme"
-                  value="yes"
-                />
-                <label for="msme-yes">Yes</label>
-                <br />
-                <input
-                  type="radio"
-                  id="msme-no"
-                  name="msme"
-                  value="no"
-                />
-                <label for="msme-no">No</label>
-              </form>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <div className="mb-1">
+          <div>1. Are you providing goods or/and services.</div>
+          <div className="myRowCenter">
+            <input type="checkbox" id="goods" className="mr-2" />
+            <label for="goods" className="mr-4">
+              Goods
+            </label>
 
+            <input type="checkbox" id="services" className="mr-2" />
+            <label for="services">Services</label>
+          </div>
+        </div>
+        <hr />
+        <div className="mb-1">
+          <div>2. Please share your residential status</div>
+          <div className="myRowCenter">
+            {" "}
+            <input
+              type="radio"
+              id="resident"
+              name="residency"
+              value="resident"
+              className="mr-2"
+            />
+            <label for="resident" className="mr-4">
+              Resident
+            </label>
+            <br />
+            <input
+              type="radio"
+              id="non-resident"
+              name="residency"
+              value="non-resident"
+              className="mr-2"
+            />
+            <label for="non-resident">Non-Resident</label>
+          </div>
+        </div>
+        <hr />
+        <div className="mb-1">
+          <div>3. PAN Number*</div>
+          <div>
+            <input />
+          </div>
+        </div>
+        <hr />
+        <div className="mb-1">
+          <div>4. Type of business</div>
+          <div className="myColCenter">
+            <div onChange={onChangeRadioValue}>
+              <input
+                type="radio"
+                id="individual"
+                name="typeOfBusiness"
+                value="individual"
+              />
+              <label for="individual">Individual</label>
+              <br />
+              <input
+                type="radio"
+                id="sole-proprietor"
+                name="typeOfBusiness"
+                value="non-resident"
+              />
+              <label for="sole-proprietor">Sole Proprietor</label>
+              <br />
+              <input
+                type="radio"
+                id="partnership-firm"
+                name="typeOfBusiness"
+                value="partnership-firm"
+              />
+              <label for="partnership-firm">Partnership Firm</label>
+              <br />
+              <input
+                type="radio"
+                id="pvt-ltd"
+                name="typeOfBusiness"
+                value="pvt-ltd"
+              />
+              <label for="pvt-ltd">Pvt Ltd</label>
+              <br />
+              <input
+                type="radio"
+                id="public-ltd"
+                name="typeOfBusiness"
+                value="public-ltd"
+              />
+              <label for="public-ltd">Public Ltd</label>
+              <br />
+              <input
+                type="radio"
+                id="others"
+                name="typeOfBusiness"
+                value="others"
+              />
+              <label for="others">Others</label>
+            </div>
+            <div>
+              {othersInput ? (
+                <>
+                  <input
+                    className="vr-input"
+                    type="text"
+                    name="typeOfBusiness"
+                    onChange={onChangeOfOthersValue}
+                  />
+                </>
+              ) : null}
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div>
+          <div>5. CRN Number*:</div>
+          <div>
+            <input />
+          </div>
+        </div>
+        <hr />
+        <div className="mb-1">
+          <div>
+            6. Mention the type of goods/services which you are providing to
+            Taskmo
+          </div>
+          <div>
+            <textarea />
+          </div>
+        </div>
+        <hr />
+        <div className="mb-1">
+          <div>
+            {" "}
+            7. Is your entity registered under{" "}
+            <b>
+              MSME ACT<sup>3</sup>
+            </b>
+            <br />
+            <span className="vr-note">
+              If (Yes) please provide a copy of the MSME registration
+              certificate mandatorily
+            </span>
+            .
+          </div>
+          <div className="myRowCenter">
+            <input type="radio" id="msme-yes" name="msme" value="yes" className="mr-2" />
+            <label for="msme-yes" className="mr-4">Yes</label>
+            <br />
+            <input type="radio" id="msme-no" name="msme" value="no" className="mr-2" />
+            <label for="msme-no">No</label>
+          </div>
+        </div>
+      </div>
+      
       <table>
         <tbody>
           <tr>

@@ -49,9 +49,9 @@ export default function VendorRegistration() {
         ) : (
           <>
             <div className="vr-card">
-              <SectionA />
-              {/* <SectionB/>
-              <SectionCD/> */}
+              {/* <SectionA /> */}
+              <SectionB/>
+              {/* <SectionCD/> */}
             </div>
 
             {/* <input
