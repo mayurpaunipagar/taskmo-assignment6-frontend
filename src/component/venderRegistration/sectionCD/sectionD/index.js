@@ -16,7 +16,10 @@ export default function SectionD() {
         <b>Section D - PAYMENT METHOD</b>
       </div>
       <div className="pay-info-container">
-          <div className="myColCenter"></div>
+        <div className="myColCenter textCenter mb-3">
+          How you
+          would like to be paid for product sales and/or services performed
+        </div>
         <div className="vr-input-container" onChange={onChangeRadioValue}>
           <form className="vr-pay-form">
             <input
@@ -38,19 +41,48 @@ export default function SectionD() {
             <label for="cheque">Physical cheque</label>
           </form>
         </div>
-        <br/>
-        <div className="pay-info-container">
-        {neftInput ? (
-          <>
-            
+        <br />
+        <div className="pay-info-container myColCenter">
+          {neftInput ? (
+            <>
+              <div>(NEFT) National Electronic Funds Transfer</div>
+              <div className="vr-note textCenter mb-3">
+                Note: Requires a bank account in the country. you will receive payment to your bank account electronically.
+              </div>
               <div>
-                (NEFT) National Electronic Funds Transfer
+                <div>Bank Name</div>
+                <div className="mb-2"><input type="text"/></div>
               </div>
-              <div className="vr-note">
-                Note: requires a bank account in the country
+              <div>
+                <div>Bank Address</div>
+                <div  className="mb-2"><input type="text"/></div>
               </div>
-          </>
-        ) : null}
+              <div>
+                <div>Bank Code</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+              <div>
+                <div>Name on Account</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+              <div>
+                <div>Account Number</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+              <div>
+                <div>IFSC Code</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+              <div>
+                <div>MICR Code</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+              <div>
+                <div>Account Type</div>
+                <div className="mb-2"><input type="text"/></div>
+              </div>
+            </>
+          ) : null}
         </div>
       </div>
     </>

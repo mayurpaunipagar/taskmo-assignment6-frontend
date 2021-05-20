@@ -4,9 +4,9 @@ export default function SectionA() {
       <div className="mb-3">
         <b>Section A - GENERAL INFORMATION</b>
       </div>
-      <td className="vr-note mb-3">
+      <div className="vr-note mb-3">
         Please carefully review related footnote.
-      </td>
+      </div>
       <table className="mb-3">
         <tbody>
           <tr>
