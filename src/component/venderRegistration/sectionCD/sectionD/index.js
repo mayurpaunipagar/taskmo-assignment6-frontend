@@ -51,35 +51,35 @@ export default function SectionD() {
               </div>
               <div>
                 <div>Bank Name</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>Bank Address</div>
-                <div  className="mb-2"><input type="text"/></div>
+                <div  className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>Bank Code</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>Name on Account</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>Account Number</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>IFSC Code</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>MICR Code</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
               <div>
                 <div>Account Type</div>
-                <div className="mb-2"><input type="text"/></div>
+                <div className="mb-2"><input className="vr-input" type="text"/></div>
               </div>
             </>
           ) : null}

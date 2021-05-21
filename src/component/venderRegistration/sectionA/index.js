@@ -16,69 +16,69 @@ export default function SectionA() {
       <div className="mb-1">
         <div>Company / Remit to Name*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Address<sup>1</sup>*</div>
-        <div><input/></div>
+        <div><input className="vr-input"/></div>
       </div>
       <div className="mb-1">
         <div>Address Line 2</div>
-        <div><input/></div>
+        <div><input className="vr-input"/></div>
       </div>
       <div className="mb-1">
         <div>Address Line 3</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Address Line 4</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>City*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>State*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Postal Code*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Country*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Phone Number*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Fax Number</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Email Address</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       </div>
@@ -88,31 +88,31 @@ export default function SectionA() {
       <div className="mb-1">
         <div>Title</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Contact Name*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Phone Number*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Fax Number</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
       <div className="mb-1">
         <div>Email Address*</div>
         <div>
-          <input />
+          <input className="vr-input" />
         </div>
       </div>
 

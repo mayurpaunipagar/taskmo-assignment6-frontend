@@ -31,7 +31,7 @@ export default function SectionCD() {
         <div className="vr-input-container">
           <div>State</div>
           <div>
-            <input
+            <input className="vr-input"
               type="text"
               placeholder="Enter State"
               onChange={(e) => {
@@ -43,7 +43,7 @@ export default function SectionCD() {
         <div className="vr-input-container">
           <div>State Code</div>
           <div>
-            <input
+            <input className="vr-input"
               type="text"
               placeholder="Enter State Code"
               onChange={(e) => {
@@ -55,7 +55,7 @@ export default function SectionCD() {
         <div className="vr-input-container">
           <div>Address</div>
           <div>
-            <input
+            <input className="vr-input"
               type="text"
               placeholder="Enter Address"
               onChange={(e) => {
@@ -67,7 +67,7 @@ export default function SectionCD() {
         <div className="vr-input-container">
           <div>GSTIN</div>
           <div>
-            <input
+            <input className="vr-input"
               type="text"
               placeholder="Enter GSTIN"
               onChange={(e) => {

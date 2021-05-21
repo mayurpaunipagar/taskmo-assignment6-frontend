@@ -30,12 +30,12 @@ export default function SectionB() {
         <div className="mb-1">
           <div>1. Are you providing goods or/and services.</div>
           <div className="myRowCenter">
-            <input type="checkbox" id="goods" className="mr-2" />
+            <input type="checkbox" id="goods" className="mr-2 " />
             <label htmlFor="goods" className="mr-4">
               Goods
             </label>
 
-            <input type="checkbox" id="services" className="mr-2" />
+            <input type="checkbox" id="services" className="mr-2 " />
             <label htmlFor="services">Services</label>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function SectionB() {
               id="resident"
               name="residency"
               value="resident"
-              className="mr-2"
+              className="mr-2 "
             />
             <label htmlFor="resident" className="mr-4">
               Resident
@@ -60,7 +60,7 @@ export default function SectionB() {
               id="non-resident"
               name="residency"
               value="non-resident"
-              className="mr-2"
+              className="mr-2 "
             />
             <label htmlFor="non-resident">Non-Resident</label>
           </div>
@@ -69,7 +69,7 @@ export default function SectionB() {
         <div className="mb-1">
           <div>3. PAN Number*</div>
           <div>
-            <input />
+            <input className="vr-input" />
           </div>
         </div>
         <hr />
@@ -143,7 +143,7 @@ export default function SectionB() {
         <div>
           <div>5. CRN Number*:</div>
           <div>
-            <input />
+            <input className="vr-input" />
           </div>
         </div>
         <hr />
@@ -153,7 +153,7 @@ export default function SectionB() {
             Taskmo
           </div>
           <div>
-            <textarea />
+            <textarea className="vr-input" />
           </div>
         </div>
         <hr />
