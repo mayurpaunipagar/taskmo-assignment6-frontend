@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function SectionB() {
   const [othersInput, setOthersInput] = useState(false);
@@ -18,6 +19,7 @@ export default function SectionB() {
 
   return (
     <>
+    <Link to="/v1/vendor-registration/:id/sectionA"><button className="vr-btn">Back</button></Link>
       <div className="mb-3 textCenter">
         <b>Section B - ENTITY INFORMATION</b>
       </div>
@@ -29,12 +31,12 @@ export default function SectionB() {
           <div>1. Are you providing goods or/and services.</div>
           <div className="myRowCenter">
             <input type="checkbox" id="goods" className="mr-2" />
-            <label for="goods" className="mr-4">
+            <label htmlFor="goods" className="mr-4">
               Goods
             </label>
 
             <input type="checkbox" id="services" className="mr-2" />
-            <label for="services">Services</label>
+            <label htmlFor="services">Services</label>
           </div>
         </div>
         <hr />
@@ -49,7 +51,7 @@ export default function SectionB() {
               value="resident"
               className="mr-2"
             />
-            <label for="resident" className="mr-4">
+            <label htmlFor="resident" className="mr-4">
               Resident
             </label>
             <br />
@@ -60,7 +62,7 @@ export default function SectionB() {
               value="non-resident"
               className="mr-2"
             />
-            <label for="non-resident">Non-Resident</label>
+            <label htmlFor="non-resident">Non-Resident</label>
           </div>
         </div>
         <hr />
@@ -81,7 +83,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="individual"
               />
-              <label for="individual">Individual</label>
+              <label htmlFor="individual">Individual</label>
               <br />
               <input
                 type="radio"
@@ -89,7 +91,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="non-resident"
               />
-              <label for="sole-proprietor">Sole Proprietor</label>
+              <label htmlFor="sole-proprietor">Sole Proprietor</label>
               <br />
               <input
                 type="radio"
@@ -97,7 +99,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="partnership-firm"
               />
-              <label for="partnership-firm">Partnership Firm</label>
+              <label htmlFor="partnership-firm">Partnership Firm</label>
               <br />
               <input
                 type="radio"
@@ -105,7 +107,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="pvt-ltd"
               />
-              <label for="pvt-ltd">Pvt Ltd</label>
+              <label htmlFor="pvt-ltd">Pvt Ltd</label>
               <br />
               <input
                 type="radio"
@@ -113,7 +115,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="public-ltd"
               />
-              <label for="public-ltd">Public Ltd</label>
+              <label htmlFor="public-ltd">Public Ltd</label>
               <br />
               <input
                 type="radio"
@@ -121,7 +123,7 @@ export default function SectionB() {
                 name="typeOfBusiness"
                 value="others"
               />
-              <label for="others">Others</label>
+              <label htmlFor="others">Others</label>
             </div>
             <div>
               {othersInput ? (
@@ -171,10 +173,10 @@ export default function SectionB() {
           </div>
           <div className="myRowCenter">
             <input type="radio" id="msme-yes" name="msme" value="yes" className="mr-2" />
-            <label for="msme-yes" className="mr-4">Yes</label>
+            <label htmlFor="msme-yes" className="mr-4">Yes</label>
             <br />
             <input type="radio" id="msme-no" name="msme" value="no" className="mr-2" />
-            <label for="msme-no">No</label>
+            <label htmlFor="msme-no">No</label>
           </div>
         </div>
       </div>
@@ -190,7 +192,7 @@ export default function SectionB() {
           </tr>
         </tbody>
       </table>
-      <button className="vr-btn">Save &amp; Next</button>
+      <Link to="/v1/vendor-registration/:id/sectionCD"><button className="vr-btn">Save &amp; Next</button></Link>
     </>
   );
 }

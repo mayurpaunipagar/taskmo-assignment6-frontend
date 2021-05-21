@@ -12,7 +12,7 @@ function App() {
         <img src={window.location.origin + "/images/logo.png"} alt="logo" />
       </div>
       <Switch>
-        <Route exact path="/v1/vendor-registration/:id">
+        <Route  path="/v1/vendor-registration/:id">
           <VendorRegistration />
         </Route>
         <Route exact path="/">

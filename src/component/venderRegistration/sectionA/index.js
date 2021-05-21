@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SectionA() {
   return (
     <>
@@ -133,7 +135,7 @@ export default function SectionA() {
           </tr>
         </tbody>
       </table>
-      <button className="vr-btn">Save &amp; Next</button>
+      <Link to="/v1/vendor-registration/:id/sectionB"><button className="vr-btn">Save &amp; Next</button></Link>
     </>
   );
 }

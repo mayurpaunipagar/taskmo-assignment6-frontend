@@ -7,7 +7,11 @@ import SectionB from "./sectionB";
 import SectionCD from "./sectionCD";
 import "./style.css";
 import VrHeader from "./vrHeader";
+import { Switch, Route,useRouteMatch } from "react-router-dom";
+
 export default function VendorRegistration() {
+  const {url}=useRouteMatch();
+  console.log("url-->",url);
   const [loading, setLoading] = useState(false);
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
@@ -49,9 +53,15 @@ export default function VendorRegistration() {
         ) : (
           <>
             <div className="vr-card">
-              {/* <SectionA /> */}
-              <SectionB/>
-              {/* <SectionCD/> */}
+              <Route path={`${url}/sectionA`}>
+              <SectionA/>  
+              </Route>
+              <Route path={`${url}/sectionB`}>
+              <SectionB/>  
+              </Route>
+              <Route path={`${url}/sectionCD`}>
+              <SectionCD/>  
+              </Route>
             </div>
 
             {/* <input

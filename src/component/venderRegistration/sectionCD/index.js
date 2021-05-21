@@ -1,5 +1,7 @@
 import { useState } from "react";
 import SectionD from "./sectionD";
+import swal from 'sweetalert';
+import { Link } from "react-router-dom";
 
 export default function SectionCD() {
   const [state, setState] = useState("");
@@ -10,8 +12,18 @@ export default function SectionCD() {
   const validateInfo = (value) => {
     return !(value === "");
   };
+
+  const submitFunc=()=>{
+    swal({
+      title: "Are you sure!",
+      text: "If you confirm, you won't be able to change anything",
+      icon: "warning",
+      button: "Confirm",
+    });
+  }
   return (
     <>
+      <Link to="/v1/vendor-registration/:id/sectionB"><button className="vr-btn">Back</button></Link>
       <div className="mb-3">
         <b>Section C - TAX INFORMATION</b>
       </div>
@@ -69,7 +81,7 @@ export default function SectionCD() {
       <SectionD/>
       <br />
       <br />
-      <button className="vr-btn">Save &amp; Next</button>
+      <button className="vr-btn" onClick={submitFunc}>Submit</button>
     </>
   );
 }

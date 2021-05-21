@@ -29,7 +29,7 @@ export default function SectionD() {
               value="neft"
               className="mr-3"
             />
-            <label for="neft">NEFT</label>
+            <label htmlFor="neft">NEFT</label>
             <br />
             <input
               type="radio"
@@ -38,7 +38,7 @@ export default function SectionD() {
               value="cheque"
               className="mr-3"
             />
-            <label for="cheque">Physical cheque</label>
+            <label htmlFor="cheque">Physical cheque</label>
           </form>
         </div>
         <br />
